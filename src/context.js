@@ -76,7 +76,7 @@ class ProductProvider extends Component {
     const index = tempCart.indexOf(selectedProduct);
     const product = tempCart[index];
     product.count += oper;
-    if (product.count == 0) {
+    if (product.count === 0) {
       this.removeItem(id);
     }
     else {
